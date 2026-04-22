@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Laughy — Artist Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="texture" aria-hidden="true"></div>
+
+    <header class="hero" id="top">
+      <div class="art-backdrop" aria-hidden="true"></div>
+      <nav class="nav">
+        <a class="logo" href="#top">NOUR LAUGHY</a>
+        <div class="nav-links">
+          <a href="#works">Works</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-copy reveal">
+        <p class="kicker">Multimedia Artist</p>
+        <h1>A portfolio sculpted from Noor Laughy’s own visuals.</h1>
+        <p>
+          Background layers are built directly from Noor’s Behance artworks,
+          then color-graded with blur, blend, and contrast treatments to create
+          a cohesive atmospheric stage.
+        </p>
+        <a class="cta" href="#works">Explore Works</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="works">
+        <div class="section-head reveal">
+          <p class="kicker">Selected Projects</p>
+          <h2>Interactive gallery</h2>
+          <div id="filters" class="filters"></div>
+        </div>
+        <div id="gallery" class="gallery"></div>
+      </section>
+
+      <section class="section split" id="about">
+        <div class="reveal">
+          <p class="kicker">Direction</p>
+          <h2>Artwork-led interface design.</h2>
+          <p>
+            Instead of generic gradients, this concept extracts visual tone from
+            Noor’s own pieces and remixes them into the layout language.
+          </p>
+        </div>
+        <div class="panel reveal">
+          <p>
+            Behance source links are preserved in cards and footer so the
+            original projects remain one click away.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <p>Concept portfolio for Noor Laughy.</p>
+      <div>
+        <a href="https://www.behance.net/noorlaughy" target="_blank" rel="noreferrer">Behance</a>
+        <a href="https://www.instagram.com/l6ughy/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </footer>
+
+    <dialog id="lightbox" class="lightbox">
+      <button id="closeBtn" class="close" aria-label="Close">✕</button>
+      <img id="lightboxImage" alt="Artwork preview" />
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxMeta"></p>
+      <a id="lightboxLink" target="_blank" rel="noreferrer">Open on Behance</a>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
