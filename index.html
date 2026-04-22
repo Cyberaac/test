@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noor Laughy — Multimedia Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor-orb" id="cursorOrb" aria-hidden="true"></div>
+
+    <header class="hero" id="top">
+      <nav class="nav">
+        <a class="logo" href="#top">NOUR LAUGHY</a>
+        <div class="nav-links">
+          <a href="#works">Works</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content reveal">
+        <p class="kicker">Multimedia Artist · Visual Storyteller</p>
+        <h1>Where mythology, memory, and motion become visual poetry.</h1>
+        <p>
+          A concept portfolio shaped from Noor Laughy’s Behance + Instagram
+          voice: surreal imagery, emotional symbolism, and interactive depth.
+        </p>
+        <div class="hero-actions">
+          <a class="cta" href="#works">Enter Gallery</a>
+          <a class="ghost" href="https://www.behance.net/noorlaughy" target="_blank" rel="noreferrer">View Behance</a>
+        </div>
+      </div>
+
+      <div class="orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+    </header>
+
+    <main>
+      <section class="section" id="works">
+        <div class="section-heading reveal">
+          <p>Featured Artworks</p>
+          <h2>Interactive visual archive</h2>
+          <div class="filters" id="filters"></div>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </section>
+
+      <section class="section split" id="about">
+        <div class="reveal">
+          <p class="kicker">Artist Statement</p>
+          <h2>Emotion-first visual storytelling.</h2>
+          <p>
+            Noor’s practice moves between character design, film, branding, and
+            cultural memory. This interface reflects that with layered motion,
+            tactile cards, and a cinematic color language.
+          </p>
+        </div>
+        <ul class="process reveal">
+          <li><strong>01 — Research:</strong> symbols, folklore, social memory</li>
+          <li><strong>02 — Development:</strong> sketch + digital paint systems</li>
+          <li><strong>03 — Composition:</strong> atmosphere, contrast, typography</li>
+          <li><strong>04 — Narrative:</strong> emotional pacing through visual rhythm</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <p>Concept experience crafted for Noor Laughy’s portfolio direction.</p>
+      <div>
+        <a href="https://www.behance.net/noorlaughy" target="_blank" rel="noreferrer">Behance</a>
+        <a href="https://www.instagram.com/l6ughy/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </footer>
+
+    <dialog id="lightbox" class="lightbox">
+      <button class="close" id="closeBtn" aria-label="Close preview">✕</button>
+      <img id="lightboxImage" alt="Artwork preview" />
+      <div class="lightbox-copy">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxMeta"></p>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
